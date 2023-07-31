@@ -1,40 +1,34 @@
-# SWJTU Slides Template
-> 本模板参考了[Focus主题](https://github.com/elauksap/focus-beamertheme)，在此向原作者表示感谢！
->
-> This template refers to the [Focus theme](https://github.com/elauksap/focus-beamertheme),  the authors of which are gratefully acknowledged.
+# Velocity Vectors Project - Group 14
 
-## 简介
-这是为西南交通大学师生制作的一个基于 $\LaTeX$ 的非官方beamer幻灯片模板。
+## Overview
 
-## 文件结构
-SWJTU_Slides_Template
-├─ .git
-├─ LICENSE
-├─ README.md
-├─ bibliography.bib
-├─ main.pdf
-├─ main.tex
-├─ src
-│    ├─ final_page_bg.png
-│    ├─ logo_name_blue.png
-│    ├─ logo_white.png
-│    └─ title_bg.png
-└─ swjtu.sty
+Welcome to Group 14's Velocity Vectors Project! This project explores the concept of velocity vectors in mathematics and their practical applications in computer engineering. We've conducted in-depth research and prepared an engaging presentation to share our findings with the class.
 
-## 使用说明
-> 关于LaTeX的使用方法请参考[这里](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
+## Presentation
 
-请按照XeLaTeX->biber->XeLaTeX->XeLaTeX的顺序对main.tex进行编译。
+Our presentation covers the derivation of velocity vectors from position vectors and examines their significance in various fields. From graphics and gaming to robotics and computer vision, we showcase how velocity concepts drive innovation in computer engineering.
 
-如果您在使用过程中遇到了问题或有相关意见和建议，请通过[电子邮件](denkiyouhou@outlook.com)联系我。
+## Repository Contents
 
-## 开源许可证
-[[GPL v3.0]](LICENSE)
+- `presentation.tex`: LaTeX source code for the presentation.
+- `bibliography.bib`: BibTeX file containing references.
+- `images/`: Folder containing images used in the presentation.
+- `README.md`: This README file providing an overview of the project.
 
----
-<h2 align="center">
--🚆竢实扬华，自强不息!🚆-
-</h2>
+## Team Members
 
-# Velocity-Vectors-Group14
-# Velocity-Vectors-Group14
+- John Smith
+- Jane Doe
+- Michael Johnson
+- Emily Williams
+
+## How to Use
+
+To view our presentation, compile the `presentation.tex` file using a LaTeX editor or compiler. Feel free to explore the code and adapt it for your projects.
+
+## Feedback
+
+We appreciate any feedback or suggestions for improvement. Feel free to open an issue or reach out to any of our team members.
+
+Let's dive into the exciting world of velocity vectors! 🚀
+
