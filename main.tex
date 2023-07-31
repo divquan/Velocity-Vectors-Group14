@@ -1,0 +1,219 @@
+
+\documentclass{beamer}
+\usepackage{swjtu}
+\usepackage[style=ieee]{biblatex}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+\usepackage{tikz}
+\addbibresource{bibliography.bib}
+
+\title{Multivariable Calculus}
+\subtitle{Computer Engineering}
+\author{Group 14}
+\institute{KNUST}
+\date{\today}
+
+\begin{document}
+% Title page
+%% Remove '[plain]' if you need a footline
+\begin{frame}[plain]
+    \titlepage
+\end{frame}
+
+
+%% TOC page
+{
+\begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents
+\end{frame}
+}
+
+
+%% Section One
+\section{Introduction}
+
+%% Basic pages
+\begin{frame}{Introduction}
+    \begin{itemize}
+        \item Welcome to the presentation on "Velocity and Its Application."
+        \item In this presentation, we will explore the concept of velocity in calculus, specifically focusing
+on the vector-based velocity, and examine its practical applications in the field of computer
+engineering.
+        \item Let's dive in!
+    \end{itemize}
+\end{frame}
+
+
+
+
+%% Section Two
+\section{Understanding Velocity in Calculus}
+
+
+\begin{frame}[t]{Understanding velocity in Calculus}
+    \vspace{20pt}
+    \begin{itemize}
+        \item Velocity is a fundamental concept in calculus that describes the rate of change of an
+object's position with respect to time.  
+        \item In vector calculus, velocity is represented as a vector quantity, taking into account both
+magnitude and direction.
+        \item In vector calculus, velocity is represented as a vector quantity, taking into account both
+magnitude and direction.
+        \item The formula for velocity in vector calculus is 
+          \begin{equation*}
+        V = \frac{dR}{dt},
+        \end{equation*}
+        where V represents the velocity
+vector, R is the position vector, and dt is the change in time.
+    \end{itemize}
+\end{frame}
+
+
+
+%% Section Three
+\section{Velocity Vector in 2D and 3D}
+
+\begin{frame}[t]{Velocity Vector in 2D and 3D}
+    \vspace{15pt} % Add vertical space of 5pt
+
+    \begin{block}{2D Velocity Vector}
+        In 2D, the velocity vector can be expressed as $ V = (V_{x}, V_{y})$ where $V_{x}$ is the horizontal
+        component and $V_{y}$ is the vertical component.
+    \end{block}
+    \vspace{5pt} % Add vertical space of 5pt
+
+    \begin{block}{3D Velocity Vector}
+        In 3D, the velocity vector becomes $\mathbf{V} = (V_x, V_y, V_z)$, with $V_x$, $V_y$, and $V_z$ representing the components along the $x$, $y$, and $z$ axes, respectively.
+    \end{block}
+  
+\end{frame}
+
+
+%% Section Four
+\section{Deriving Velocity from Position Vector}
+
+\begin{frame}{Deriving Velocity from Position Vector}
+
+To find the velocity vector from the position vector, we differentiate the position vector with respect to time (dt).
+
+\vspace{8pt}
+For a 2D position vector $R(t) = (x(t), y(t))$, the velocity vector $V(t) = \left(\frac{dx}{dt}, \frac{dy}{dt}\right)$.
+
+\vspace{8pt}
+For a 3D position vector $R(t) = (x(t), y(t), z(t))$, the velocity vector $V(t) = \left(\frac{dx}{dt}, \frac{dy}{dt}, \frac{dz}{dt}\right)$.
+\end{frame}
+
+%% Section Five
+\section{Applications in Computer Engineering}
+
+%% Application 1
+% image1
+\begin{frame}[plain]
+        \frametitle{Image Overlay}
+        \begin{tikzpicture}[remember picture, overlay]
+        \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{src/test.jpg}};
+        \node[text=white, font=\Huge\bfseries] at (current page.center) {Graphics and Gaming};
+      \end{tikzpicture}
+    
+\end{frame}
+
+
+\begin{frame}[t]{Graphics and Gaming}
+\vspace{15pt}
+In computer graphics and gaming, understanding velocity is crucial for realistic animations and simulations.
+
+Velocity vectors are used to model the movement of characters, objects, and particles within a game or simulation environment. By manipulating the velocity vectors, developers can control the speed and direction of various elements, creating engaging and immersive experiences.
+\end{frame}
+
+%% Application 2
+% image2
+\begin{frame}[plain]
+        \frametitle{Image Overlay}
+        \begin{tikzpicture}[remember picture, overlay]
+        \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{src/test.jpg}};
+        \node[text=white, font=\Huge\bfseries] at (current page.center) {
+        \begin{tabular}{c}
+            Robotics \\ and  \\ Autonomous Systems
+      \end{tabular}
+        };
+      \end{tikzpicture}
+    
+\end{frame}
+
+\begin{frame}[t]{Robotics and Autonomous Systems}
+\vspace{15pt}
+In robotics and autonomous systems, velocity vectors play a vital role in determining the movement of robots and autonomous vehicles.
+
+By using velocity-based control algorithms, robots can navigate through complex environments, avoid obstacles, and reach their destinations efficiently. Velocity vectors help in maintaining stability and precision in robotic movements.
+\end{frame}
+
+
+%% Application 3
+%image3
+\begin{frame}[plain]
+        \frametitle{Image Overlay}
+        \begin{tikzpicture}[remember picture, overlay]
+        \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{src/test.jpg}};
+        \node[text=white, font=\Huge\bfseries] at (current page.center) {Computer Vision};
+      \end{tikzpicture}
+    
+\end{frame}
+
+\begin{frame}[t]{Computer Vision}
+\vspace{15pt}
+In computer vision applications, velocity vectors are utilized for tracking and analyzing moving objects.
+
+Velocity-based tracking algorithms help identify the speed and direction of objects, enabling applications such as object recognition, motion detection, and video analysis.
+\end{frame}
+
+%% Application 4
+\begin{frame}[plain]
+        \frametitle{Image Overlay}
+        \begin{tikzpicture}[remember picture, overlay]
+        \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{src/test.jpg}};
+        \node[text=white, font=\Huge\bfseries ] at (current page.center) {
+        \begin{tabular}{c}
+        Network Traffic \\ and \\ Data Transfer
+        
+      \end{tabular}
+
+        };
+      \end{tikzpicture}
+    
+\end{frame}
+
+\begin{frame}[t]{Network Traffic and Data Transfer}
+\vspace{15pt}
+Velocity concepts are also applicable in network engineering and data transfer.
+
+Network engineers use velocity-based algorithms to manage data packet flow, optimize network traffic, and ensure efficient data transfer between devices and servers.
+\end{frame}
+
+%% Section Ten
+\section{Conclusion}
+
+\begin{frame}[t]{Conclusion}
+Velocity, as a fundamental concept in calculus with vector-based representation, finds wide-ranging applications in computer engineering.
+
+From graphics and gaming to robotics and data transfer, understanding velocity enables engineers and developers to create sophisticated and efficient systems.
+
+As technology continues to advance, velocity concepts will remain indispensable for driving innovation in computer engineering.
+\end{frame}
+
+%% Section Eleven
+\section{Q\&A}
+
+    \begin{frame}[t]{Q\&A}
+    \vspace{15pt}
+    Thank you for your attention! Now, we welcome any questions you may have about velocity and its applications in computer engineering.
+    \end{frame}
+
+%% Final page
+\begin{frame}[plain]
+    \begin{picture}(0,0)
+        \put(-116, -155){\includegraphics[width=1.01\paperwidth]{src/final_page_bg.png}}
+    \end{picture}
+    \centering\usebeamerfont{acknowledgement}\usebeamercolor[fg]{acknowledgement}Thank You!
+\end{frame}
+
+\end{document}
