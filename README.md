@@ -17,10 +17,14 @@ Our presentation covers the derivation of velocity vectors from position vectors
 
 ## Team Members
 
-- John Smith
-- Jane Doe
-- Michael Johnson
-- Emily Williams
+- Divine Korankye-Quansah
+- Hayibor Maxwell Seyram
+- Duah Delphina
+- Agyapong Darcosta
+- Marfo Richmond Mensah
+- Dodoo Samuel William
+- Otchere Dodoo Michael
+  _Send me a mail if I have ommitted you name_
 
 ## How to Use
 
