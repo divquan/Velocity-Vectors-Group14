@@ -7,9 +7,9 @@
 \addbibresource{bibliography.bib}
 
 \title{Multivariable Calculus}
-\subtitle{Computer Engineering}
+\subtitle{Velocity Vector}
 \author{Group 14}
-\institute{KNUST}
+\institute{Computer Engineering}
 \date{\today}
 
 \begin{document}
@@ -57,8 +57,6 @@ engineering.
 object's position with respect to time.  
         \item In vector calculus, velocity is represented as a vector quantity, taking into account both
 magnitude and direction.
-        \item In vector calculus, velocity is represented as a vector quantity, taking into account both
-magnitude and direction.
         \item The formula for velocity in vector calculus is 
           \begin{equation*}
         V = \frac{dR}{dt},
@@ -103,15 +101,130 @@ For a 2D position vector $R(t) = (x(t), y(t))$, the velocity vector $V(t) = \lef
 For a 3D position vector $R(t) = (x(t), y(t), z(t))$, the velocity vector $V(t) = \left(\frac{dx}{dt}, \frac{dy}{dt}, \frac{dz}{dt}\right)$.
 \end{frame}
 
+\begin{frame}
+  \frametitle{Deriving Velocity from Position Vector}
+  
+  \textbf{Sample Problem:}
+  The position of a particle moving in a 2D plane at time \( t \) is given by the position vector \( \mathbf{R}(t) = (4t^2, 3t) \) in meters. Find the velocity vector \( \mathbf{V}(t) \) at time \( t \).
+  
+  \vspace{10pt}
+  
+  \textbf{Solution:}
+  The velocity vector \( \mathbf{V}(t) \) is the derivative of the position vector \( \mathbf{R}(t) \) with respect to time \( t \).
+  \[ \mathbf{V}(t) = \frac{d\mathbf{R}}{dt} = \left(\frac{d}{dt}(4t^2), \frac{d}{dt}(3t)\right) \]
+  \[ \mathbf{V}(t) = (8t, 3) \]
+  
+  Therefore, the velocity vector \( \mathbf{V}(t) \) at time \( t \) is \( (8t, 3) \) meters per second.
+\end{frame}
+
 %% Section Five
 \section{Applications in Computer Engineering}
 
-%% Application 1
+
+%% Application Computer vision ---start-----
+%image3
+\begin{frame}[plain]
+        \frametitle{Image Overlay}
+        \begin{tikzpicture}[remember picture, overlay]
+        \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{src/vision.jpg}};
+        \node[text=white, font=\Huge\bfseries] at (current page.center) {Computer Vision};
+      \end{tikzpicture}
+    
+\end{frame}
+
+\begin{frame}[t]{Computer Vision}
+\vspace{15pt}
+In computer vision applications, velocity vectors are utilized for tracking and analyzing moving objects.
+
+Velocity-based tracking algorithms help identify the speed and direction of objects, enabling applications such as object recognition, motion detection, and video analysis.
+
+\vspace{16pt}
+
+\textbf{Sample Problem}
+
+A computer vision system is tracking the movement of a vehicle. The position of the vehicle at $t = 0$ seconds is $\mathbf{P}_0 = (100 \, \text{pixels}, 50 \, \text{pixels})$. The velocity vector of the vehicle is $\mathbf{V} = (4 \, \text{pixels/s}, -2 \, \text{pixels/s})$. Calculate the predicted position of the vehicle after $t = 3$ seconds.
+
+
+\end{frame}
+
+\begin{frame}[plain]
+
+\textbf{Solution:}
+
+To find the predicted position of the vehicle at $t = 3$ seconds, we use the formula for position with constant velocity:
+
+\[ \mathbf{P}(t) = \mathbf{P}_0 + \mathbf{V} t \]
+
+Substituting the given values:
+
+\[ \mathbf{P}(3) = (100 \, \text{pixels}, 50 \, \text{pixels}) + (4 \, \text{pixels/s}, -2 \, \text{pixels/s}) \times 3 \]
+
+\[ \mathbf{P}(3) = (100 \, \text{pixels}, 50 \, \text{pixels}) + (12 \, \text{pixels}, -6 \, \text{pixels}) 
+= (112 \, \text{pixels}, 44 \, \text{pixels}) \]
+
+So, the predicted position of the vehicle after $t = 3$ seconds is $(112 \, \text{pixels}, 44 \, \text{pixels})$.
+\end{frame}
+
+
+%% Application 4
+\begin{frame}[plain]
+        \frametitle{Image Overlay}
+        \begin{tikzpicture}[remember picture, overlay]
+        \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{src/network.jpg}};
+        \node[text=white, font=\Huge\bfseries ] at (current page.center) {
+        \begin{tabular}{c}
+        Network Traffic \\ and \\ Data Transfer
+        
+      \end{tabular}
+
+        };
+      \end{tikzpicture}
+    
+\end{frame}
+
+\begin{frame}[t]{Network Traffic and Data Transfer}
+\vspace{15pt}
+Velocity concepts are also applicable in network engineering and data transfer.
+
+Network engineers use velocity-based algorithms to manage data packet flow, optimize network traffic, and ensure efficient data transfer between devices and servers.
+
+\vspace{15pt}
+
+%% Problem  
+\textbf{Sample Problem}
+
+A data packet is transmitted from a server to a client in a computer network. The server is located at position \( \mathbf{S} = (0 \, \text{m}, 0 \, \text{m}) \) and the client is located at position \( \mathbf{C} = (100 \, \text{m}, 50 \, \text{m}) \). The data packet is transmitted with a velocity of \( \mathbf{V} = (20 \, \text{m/s}, 10 \, \text{m/s}) \). Calculate the time it will take for the data packet to reach the client.
+\end{frame}
+
+
+%% Solution
+\begin{frame}[plain]
+\vspace{5pt}
+\textbf{Solution}
+
+To calculate the time it will take for the data packet to reach the client, we use the formula for time of flight (\( t \)) for constant velocity:
+
+\[ t = \frac{\Delta d}{\| \mathbf{V} \|} \]
+
+where \( \Delta d \) is the displacement (change in position) from the server to the client, and \( \| \mathbf{V} \| \) is the magnitude of \( \mathbf{V} \).
+
+\[ \Delta d = \mathbf{C} - \mathbf{S} = (100 \, \text{m}, 50 \, \text{m}) - (0 \, \text{m}, 0 \, \text{m}) = (100 \, \text{m}, 50 \, \text{m}) \]
+
+\[ \| \mathbf{V} \| = \sqrt{(20 \, \text{m/s})^2 + (10 \, \text{m/s})^2} = \sqrt{500} \, \text{m/s} \]
+
+\[ t = \frac{(100 \, \text{m}, 50 \, \text{m})}{\sqrt{500}} \approx (14.14 \, \text{s}, 7.07 \, \text{s}) \]
+
+So, it will take approximately 14.14 seconds for the data packet to reach the client.
+\end{frame}
+
+
+
+%% Application 3
 % image1
 \begin{frame}[plain]
         \frametitle{Image Overlay}
         \begin{tikzpicture}[remember picture, overlay]
-        \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{src/test.jpg}};
+        \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{src/gaming.jpg}};
         \node[text=white, font=\Huge\bfseries] at (current page.center) {Graphics and Gaming};
       \end{tikzpicture}
     
@@ -125,12 +238,13 @@ In computer graphics and gaming, understanding velocity is crucial for realistic
 Velocity vectors are used to model the movement of characters, objects, and particles within a game or simulation environment. By manipulating the velocity vectors, developers can control the speed and direction of various elements, creating engaging and immersive experiences.
 \end{frame}
 
+
 %% Application 2
 % image2
 \begin{frame}[plain]
         \frametitle{Image Overlay}
         \begin{tikzpicture}[remember picture, overlay]
-        \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{src/test.jpg}};
+        \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{src/robot.jpg}};
         \node[text=white, font=\Huge\bfseries] at (current page.center) {
         \begin{tabular}{c}
             Robotics \\ and  \\ Autonomous Systems
@@ -148,65 +262,23 @@ By using velocity-based control algorithms, robots can navigate through complex 
 \end{frame}
 
 
-%% Application 3
-%image3
-\begin{frame}[plain]
-        \frametitle{Image Overlay}
-        \begin{tikzpicture}[remember picture, overlay]
-        \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{src/test.jpg}};
-        \node[text=white, font=\Huge\bfseries] at (current page.center) {Computer Vision};
-      \end{tikzpicture}
-    
-\end{frame}
 
-\begin{frame}[t]{Computer Vision}
-\vspace{15pt}
-In computer vision applications, velocity vectors are utilized for tracking and analyzing moving objects.
 
-Velocity-based tracking algorithms help identify the speed and direction of objects, enabling applications such as object recognition, motion detection, and video analysis.
-\end{frame}
 
-%% Application 4
-\begin{frame}[plain]
-        \frametitle{Image Overlay}
-        \begin{tikzpicture}[remember picture, overlay]
-        \node at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{src/test.jpg}};
-        \node[text=white, font=\Huge\bfseries ] at (current page.center) {
-        \begin{tabular}{c}
-        Network Traffic \\ and \\ Data Transfer
-        
-      \end{tabular}
 
-        };
-      \end{tikzpicture}
-    
-\end{frame}
-
-\begin{frame}[t]{Network Traffic and Data Transfer}
-\vspace{15pt}
-Velocity concepts are also applicable in network engineering and data transfer.
-
-Network engineers use velocity-based algorithms to manage data packet flow, optimize network traffic, and ensure efficient data transfer between devices and servers.
-\end{frame}
 
 %% Section Ten
 \section{Conclusion}
 
 \begin{frame}[t]{Conclusion}
+\vspace{15pt}
+
 Velocity, as a fundamental concept in calculus with vector-based representation, finds wide-ranging applications in computer engineering.
 
 From graphics and gaming to robotics and data transfer, understanding velocity enables engineers and developers to create sophisticated and efficient systems.
 
 As technology continues to advance, velocity concepts will remain indispensable for driving innovation in computer engineering.
 \end{frame}
-
-%% Section Eleven
-\section{Q\&A}
-
-    \begin{frame}[t]{Q\&A}
-    \vspace{15pt}
-    Thank you for your attention! Now, we welcome any questions you may have about velocity and its applications in computer engineering.
-    \end{frame}
 
 %% Final page
 \begin{frame}[plain]
