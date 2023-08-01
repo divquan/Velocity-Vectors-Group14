@@ -10,9 +10,9 @@ Our presentation covers the derivation of velocity vectors from position vectors
 
 ## Repository Contents
 
-- `presentation.tex`: LaTeX source code for the presentation.
+- `main.tex`: LaTeX source code for the presentation.
 - `bibliography.bib`: BibTeX file containing references.
-- `images/`: Folder containing images used in the presentation.
+- `src/`: Folder containing images used in the presentation.
 - `README.md`: This README file providing an overview of the project.
 
 ## Team Members
@@ -28,7 +28,7 @@ Our presentation covers the derivation of velocity vectors from position vectors
 
 ## How to Use
 
-To view our presentation, compile the `presentation.tex` file using a LaTeX editor or compiler. Feel free to explore the code and adapt it for your projects.
+To view our presentation, compile the `main.tex` file using a LaTeX editor or compiler. Feel free to explore the code and adapt it for your projects.
 
 ## Feedback
 
